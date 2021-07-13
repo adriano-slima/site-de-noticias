@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de notícias</title>
+    <link rel="stylesheet" href="../css/styleeducacao.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body class="layout">
+
+    <header class="cabeçalho">
+        <a href="../index.html" class="titulo">Portal de notícias</a>
+    </header>
+
+    <nav class="menu">
+        
+        <input type="text" class="pesquisar" size="50">
+        <input type="button" onclick="buscar()" value="Buscar" class="btn"> 
+        
+        <a href="../html/faleconosco.html">Fale conosco</a>
+        <a href="../html/politica.html">Política</a>
+        <a href="../html/educacao.html">Educação</a>
+        <a href="../html/saude.html">Saúde</a>
+        <a href="../html/principal.html">Principais manchetes</a>     
+
+    </nav>
+
+    <section class="educação">
+        <div id="edu"></div>
+    </section>
+
+    <footer class="rodape">
+        <p>Desenvolvido por: Adriano Lima</p>
+    </footer>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+                $.getJSON('../json/noticia.json', function(data) {
+                    //carrega noticias
+                    let edc = data.NOTICIAS.EDUCACAO;
+                    let i;
+        
+                    for (i=0; i < edc.length; i++) {
+        
+                        let divedu = "<div class='not'><h1 class='titnoticia'>"+edc[i].TITULO+"</h1>"+
+                            "<img class='imgnot' height='200px' width='300px' src='"+'../'+edc[i].IMAGEM+"'>"+
+                            "<P class='textnot'>"+edc[i].TEXTO+"</p></div>";            
+                    $("#edu").append(divedu);
+        
+                    }
+        
+                });
+            });
+        
+            </script>
+
+</body>
+</html>

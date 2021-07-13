@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de notícias</title>
+    <link rel="stylesheet" href="../css/stylepolitica.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body class="layout">
+
+    <header class="cabeçalho">
+        <a href="../index.html" class="titulo">Portal de notícias</a>
+    </header>
+
+    <nav class="menu">
+        
+        <input type="text" class="pesquisar" size="50">
+        <input type="button" onclick="buscar()" value="Buscar" class="btn"> 
+        
+        <a href="../html/faleconosco.html">Fale conosco</a>
+        <a href="../html/politica.html">Política</a>
+        <a href="../html/educacao.html">Educação</a>
+        <a href="../html/saude.html">Saúde</a>
+        <a href="../html/principal.html">Principais manchetes</a>
+        
+
+    </nav>
+
+    <section class="politica">
+
+        <div id="plt"></div>
+
+    </section>
+
+    <footer class="rodape">
+        <p>Desenvolvido por: Adriano Lima</p>
+    </footer>
+
+    <script type="text/javascript">
+
+$(document).ready(function() {
+        $.getJSON('../json/noticia.json', function(data) {
+            //carrega noticias
+            let plc = data.NOTICIAS.POLITICA;
+            let i;
+
+            for (i=0; i < plc.length; i++) {
+
+                let divpolitica = "<div class='not'><h1 class='titnoticia'>"+plc[i].TITULO+"</h1>"+
+                    "<img class='imgnot' height='200px' width='300px' src='"+'../'+plc[i].IMAGEM+"'>"+
+                    "<P class='textnot'>"+plc[i].TEXTO+"</p></div>";            
+            $("#plt").append(divpolitica);
+
+            }
+
+        });
+    });
+
+    </script>
+
+</body>
+</html>

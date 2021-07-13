@@ -1,0 +1,92 @@
+.layout {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "saude educação politica"
+        "footer footer footer";  
+    grid-template-rows: 100px 60px calc(100vh - 205px) calc(100vh - 180px) 150px;     
+}
+
+.cabeçalho {
+    grid-area: header;
+    background-color: #ccc;
+}
+
+.menu {
+    grid-area: nav;
+    background-color: #ccc;
+}
+
+.principal {
+    grid-area: main;
+    background-color: #ccc;
+}
+.propaganda{
+    grid-area: aside;
+    background-color: #ccc;
+}
+
+.saude {
+    grid-area: saude;
+    background-color: #ccc;
+}
+
+.educação {
+    grid-area: educação;
+    background-color: #ccc;
+}
+
+.politica {
+    grid-area: politica;
+    background-color: #ccc;
+}
+
+.rodape {
+    grid-area: footer;
+    background-color: #ccc;
+}
+
+a {
+    float: right;
+    margin-top: 10px;
+    padding: 10px;
+    color: black;
+    font-size: 25px;
+
+}
+
+.pesquisar {
+    margin-top: 18px;
+    margin-left: 8px;
+    padding: 4px;
+    
+}
+.btn {
+    padding: 4px;
+    cursor: pointer;
+}
+.titulo {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    font: 45px verdana;
+}
+.not{
+    width: 350px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.titnoticia{
+    color: blue;
+}
+#plt,#edu,#sd{
+    margin: 0 auto;
+    height: 100%;
+    width: 400px;
+    border: solid 3px black;
+    
+}

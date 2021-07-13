@@ -1,0 +1,72 @@
+.layout {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "educação educação"
+        "footer footer";  
+    grid-template-rows: 100px 60px 100vh 150px;     
+}
+
+.cabeçalho {
+    grid-area: header;
+    background-color: #ccc;
+}
+
+.menu {
+    grid-area: nav;
+    background-color: #ccc;
+}
+
+
+.educação {
+    grid-area: educação;
+    background-color: #ccc;
+}
+
+
+.rodape {
+    grid-area: footer;
+    background-color: #ccc;
+}
+
+a {
+    float: right;
+    margin-top: 10px;
+    padding: 10px;
+    color: black;
+    font-size: 25px;
+
+}
+.pesquisar {
+    margin-top: 18px;
+    margin-left: 8px;
+    padding: 4px;
+    
+}
+.btn {
+    padding: 4px;
+    cursor: pointer;
+}
+.titulo {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    font: 45px verdana;
+}
+.titnoticia{
+    color: blue;
+}
+
+#edu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.not{
+    width: 350px;
+    box-shadow: 0px 0px 5px black;
+    margin: 10px;
+    padding: 10px;
+}

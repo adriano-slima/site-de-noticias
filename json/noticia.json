@@ -1,0 +1,76 @@
+{
+    "NOTICIAS": {
+       "POLITICA": [
+       {
+          "IMAGEM": "imagens/bolsonaro.png",
+          "TITULO": "Bolsonaro é investigado pela CPI da Covid-19",
+          "TEXTO": "O Presidente será escutado pelo relator da cpi e corre risco de perder seu mandato se provado que houve crime de responsabilidade"
+       },
+       {
+          "IMAGEM": "imagens/doria.jpg",
+          "TITULO": "Governo do estado de São Paulo anuncia aumento de impostos",
+          "TEXTO": "Como se já nao bastasse o absurdo de impostos que os brasileiros param, o governador João dória anuncia o aumento de mais de 20% de impostos mesmo durante a pandemia."
+        
+       },
+       {
+          "IMAGEM": "imagens/bndes.jpg",
+          "TITULO": "BNDES acumula dívida bilionária por financiar obras na Venezuela e Cuba",
+          "TEXTO": "Estima-se que o BNDES tomou prejuizo de mais de 2,3 bilhões por financiar obras na Venezuela e em Cuba durante o governo Lula, um verdadeiro disperdício do dinheiro público que deveria ser investido no Brasil."
+        }
+    ],
+    "EDUCACAO": [
+     {
+          "IMAGEM": "imagens/aula.jpg",
+          "TITULO": "Governo estuda volta as aulas presenciais",
+          "TEXTO": "O governo federal anunciou nesta terça-feira que as aulas presencial podem voltar ainda esse mês, mas os professores ainda não se sentem seguros de voltar as atividades em plena pandemia."
+     },
+     {
+          "IMAGEM": "imagens/enem.jpg",
+          "TITULO": "Atenção para não perder o prazo de inscrição para o Enem 2021",
+          "TEXTO": "MEC anuncia a abertura das inscrições do Exame nacional do ensino médio 2021(Enem) as inscrições vão do dia 10 ao dia 14 de julho, confira o calendario completo. " 
+      
+     },
+     {
+          "IMAGEM": "imagens/ifsp.jpg",
+          "TITULO": "IFSP abre oportunidade de cursos para a regiao de Campinas",
+          "TEXTO": "O Instituto Federal de São Paulo (IFSP) está com inscrições abertas para o campus Campinas, os cursos oferecidos são de nível técnico e superior, confira o edital para ter mais informações."
+      }
+  ],
+     "SAUDE": [
+     {
+          "IMAGEM": "imagens/vacina.jpeg",
+          "TITULO": "Governo de São Paulo anuncia que até Setembro todos os maiores de 18 anos estarão vacinados",
+          "TEXTO": "Brasil segue em ritmo acelerado na vacinação e o plano é vacinar todos os maiores de 18 anos até setembro"
+     },
+     {
+          "IMAGEM": "imagens/hospital.jpg",
+          "TITULO": "Cidade de Campinas ganhará mais um hospital até 2023",
+          "TEXTO": "Prefeitura anunciou a abertura de uma licitação para construturas realizar a construção de uma nova unidade hospitalar, o o plano é entregar o novo hospital até 2023."
+     },
+     {
+          "IMAGEM": "imagens/dengue.png",
+          "TITULO": "Casos de Dengue tem aumento de 10% em relação ao mesmo mês do ano passado",
+          "TEXTO": "Mesmo o foco sendo a pandemia do corona virus, não podemos esquecer da dengue, os dados do ministério da saúde monstra um aumento nos casos."
+      }
+     ],
+     "PRINCIPAL": [
+          {
+               "IMAGEM": "imagens/lazaro.png",
+               "TITULO": "Passaram-se 15 dias e o paradeiro do criminoso Lazaro Barbosa ainde é desconhecido!",
+               "TEXTO": "policia encontra bastante dificuldades na caçada ao lazaro, visto que o bandido tem grandes habilidades e conhecimento da área de mata por onde anda fujindo."
+
+          },
+          {
+               "IMAGEM": "imagens/copaam.jpg",
+               "TITULO": "Brasil e Argentina disputam a final da copa america neste sabado, jogo será transmitido as 21 horas pelo SBT",
+               "TEXTO": "O duelo entre os dois maiores rivais do futebol acontecerá neste sábado, um jogo muito esperado por ambas as torcidas que promete trazer muitas emoções."
+           
+          },
+          {
+               "IMAGEM": "imagens/frasco.jpeg",
+               "TITULO": "CPI da covid insvestica suposta corrupção na compra da vacina Covaxin pelo governo federal",
+               "TEXTO": "Segundo denuncias do deputado Luis miranda, o governo federal estava negociando a compra da vacina super faturada em esquema de propina e solta audio da negociação"
+           }
+       ]
+     }
+}

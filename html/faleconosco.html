@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de notícias</title>
+    <link rel="stylesheet" href="../css/stylefaleconosco.css">
+</head>
+<body class="layout">
+
+    <header class="cabeçalho">
+        <a href="../index.html" class="titulo">Portal de notícias</a>
+    </header>
+
+    <nav class="menu">
+        
+        <input type="text" class="pesquisar" size="50">
+        <input type="button" onclick="buscar()" value="Buscar" class="btn"> 
+        
+        <a href="../html/faleconosco.html">Fale conosco</a>
+        <a href="../html/politica.html">Política</a>
+        <a href="../html/educacao.html">Educação</a>
+        <a href="../html/saude.html">Saúde</a>
+        <a href="../html/principal.html">Principais manchetes</a>
+        
+    </nav>
+
+    <main class="faleconosco"> 
+
+        <form action="">
+            Nome: <input type="text" name="nome" > <br>
+            E-mail: <input type="text" name="email"> <br>
+            Mensagem <textarea name="mensagem" id="msg" cols="20" rows="10"></textarea> <br>
+            <input type="submit" name="Enviar" value="Enviar" class="btn1">
+        </form>
+    
+    </main>
+
+    <footer class="rodape">
+        <p class="desenvolvido">Desenvolvido por: Adriano Lima</p>
+    </footer>
+
+</body>
+</html>
