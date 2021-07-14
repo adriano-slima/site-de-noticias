@@ -47,10 +47,19 @@
         
                         let divedu = "<div class='not'><h1 class='titnoticia'>"+edc[i].TITULO+"</h1>"+
                             "<img class='imgnot' height='200px' width='300px' src='"+'../'+edc[i].IMAGEM+"'>"+
-                            "<P class='textnot'>"+edc[i].TEXTO+"</p></div>";            
+                            "<P class='textnot'>"+edc[i].TEXTO+"</p>"+
+                            "<div id='like'> <ul> <li class='click' data-like-count='0'>Gostei  <img src='../imagens/likes.png' click='click()'></a></li> <li class='like'>0 Curtidas</li> </ul> </div></div>";           
                     $("#edu").append(divedu);
         
                     }
+                    $(".click").on('click', function() {
+            var count = parseInt($(this).attr("data-like-count"));
+            count++;
+            $(this).css('opacity', "0.7");
+            $(this).next().html(count + " Curtidas");
+            $(this).off(event);
+            $(this).attr("data-like-count", count);
+        });
         
                 });
             });

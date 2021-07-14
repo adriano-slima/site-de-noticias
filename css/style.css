@@ -87,6 +87,33 @@ a {
     margin: 0 auto;
     height: 100%;
     width: 400px;
-    border: solid 3px black;
+    border: solid 3px black;  
+}
+
+
+.titnoticiap{
+    color: blue;
+}
+#pcp {
+    margin: 0 auto;
     
+    border: solid 3px black;  
+}
+.click {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display:inline;
+    height:10px;
+}
+.like {
+    display:inline;
+    height:10px;
+    border: none;
+    font-size: 20px;
+
 }
